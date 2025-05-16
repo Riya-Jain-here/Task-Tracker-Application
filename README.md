@@ -76,14 +76,14 @@ The frontend will be available at http://localhost:5173
 
 # Task_Tracker_Application/screenshots/
 
-- [Login](screenshots\Login.png)
-- [Signup](screenshots\Signup.png)
-- [Dashboard](screenshots\dashboard.png)
-- [Project Page - Task list (Main)](screenshots\TaskList.png)
-- [Project Page - Task List - Add Task](screenshots\TaskListPart2.png)
-- [Project Page - Task list - View Task(Read)](screenshots\TaskListPart3.png)
-- [Project Page - Task list - Delete Task ](screenshots\TaskListPart4.png)
-- [Project Page - Task list - Edit Task ](screenshots\TaskListPart5.png)
-- [Project Page - Task list - Updated Task View ](screenshots\TaskListPart6.png)
+- ![Login](./screenshots/Login.png)
+- ![Signup](./screenshots/Signup.png)
+- ![Dashboard](./screenshots/dashboard.png)
+- ![Project Page - Task list (Main)](./screenshots/TaskList.png)
+- ![Project Page - Task List - Add Task](./screenshots/TaskListPart2.png)
+- ![Project Page - Task list - View Task(Read)](./screenshots/TaskListPart3.png)
+- ![Project Page - Task list - Delete Task ](./screenshots/TaskListPart4.png)
+- ![Project Page - Task list - Edit Task ](./screenshots/TaskListPart5.png)
+- ![Project Page - Task list - Updated Task View ](./screenshots/TaskListPart6.png)
 
 
