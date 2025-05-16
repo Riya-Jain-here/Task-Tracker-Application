@@ -19,9 +19,9 @@ A full-stack Task Tracker built with **MERN (MongoDB, Express.js, React.js, Node
 
 ## 🛠️ Technologies Used
 
-- **Frontend:** React.js, React Router, Axios, Bootstrap, React Router Dom
-- **Backend:** Node.js, Express.js, MongoDB, Mongoose, JWT, bcrypt.js (for password hashing)
-- **Other:** VS Code
+- **Frontend:** React.js, Axios, Bootstrap, React Router Dom
+- **Backend:** Node.js, Express.js, MongoDB, Mongoose, JWT, bcrypt.js
+- **Tool used:** VS Code
 
 ---
 
