@@ -50,7 +50,7 @@ task_tracker_application/
 
 # Setup Backend---
 
-`vs code terminal (open your project)`
+`vs code terminal (open project in vs code)`
 - cd server
 - npm init -y
 - npm install mongoose monogodb express ejs body-parser
