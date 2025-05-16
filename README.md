@@ -28,10 +28,10 @@ A full-stack Task Tracker built with **MERN (MongoDB, Express.js, React.js, Node
 ## Project Structure
 
 task_tracker_application/
-├── client/ # React frontend code
-├── server/ # Express backend code
-├── .gitignore # Root gitignore file
-└── README.md # This file
+- ├── client/ # React frontend code
+- ├── server/ # Express backend code
+- ├── .gitignore # Root gitignore file
+- └── README.md # This file
 
 ---
 
@@ -46,33 +46,33 @@ task_tracker_application/
 
 1. Clone the repository  
    `git bash`
-   git clone https://github.com/Riya-Jain-here/Task-Tracker-Application.git
+   - git clone https://github.com/Riya-Jain-here/Task-Tracker-Application.git
 
 # Setup Backend---
 
 `vs code terminal (open your project)`
-cd server
-npm init -y
-npm install mongoose monogodb express ejs body-parser
+- cd server
+- npm init -y
+- npm install mongoose monogodb express ejs body-parser
 
 # Create a .env file with the following variables:
 
 `server/.env`
-MONGO_URI=your_mongo_connection_string
-JWT_SECRET=your_jwt_secret
+- MONGO_URI=your_mongo_connection_string
+- JWT_SECRET=your_jwt_secret
 
 # Start the server--
 
-node index.js
+- node index.js
 
 # Setup Frontend---
 
 `open new terminal`
-cd client
-npm install
-npm run dev
+- cd client
+- npm install
+- npm run dev
 
-The frontend will be available at http://localhost:5173
+The frontend will run at http://localhost:5173
 
 # Task_Tracker_Application/screenshots/
 
