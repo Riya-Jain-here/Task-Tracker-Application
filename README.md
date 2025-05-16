@@ -52,7 +52,6 @@ task_tracker_application/
 
 `vs code terminal (open project in vs code)`
 - cd server
-- npm init -y
 - npm install mongoose monogodb express ejs body-parser
 
 # Create a .env file with the following variables:
