@@ -40,7 +40,8 @@ const Dashboard = () => {
       setProjects([...projects, res.data]);
       setName("");
     } catch (err) {
-      alert("Maximum 4 projects can be created");
+      //alert("Maximum 4 projects can be created");
+      alert("Failed to create project");
     }
   };
 
@@ -80,7 +81,7 @@ const Dashboard = () => {
           <button
             className="btn btn-primary"
             onClick={createProject}
-            disabled={projects.length >= 4}
+           //disabled={projects.length >= 4}
           >
             Create Project
           </button>
