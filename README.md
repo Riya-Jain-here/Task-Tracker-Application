@@ -52,7 +52,6 @@ task_tracker_application/
 
 `vs code terminal (open project in vs code)`
 - cd server
-- npm init -y
 - npm install mongoose monogodb express ejs body-parser
 
 # Create a .env file with the following variables:
@@ -85,5 +84,3 @@ The frontend will run at http://localhost:5173
 - ![Project Page - Task list - Delete Task ](./screenshots/TaskListPart4.png)
 - ![Project Page - Task list - Edit Task ](./screenshots/TaskListPart5.png)
 - ![Project Page - Task list - Updated Task View ](./screenshots/TaskListPart6.png)
-
-
