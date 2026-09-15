@@ -1,13 +1,13 @@
 # Task Tracker Application
 
-A full-stack Task Tracker built with **MERN (MongoDB, Express.js, React.js, Node.js)**. This web application allows users to create up to 4 projects and manage tasks within each project. Users can perform CRUD operations on tasks, update task status, and filter tasks based on status. The system includes secure authentication with JWT.
+A full-stack Task Tracker built with **MERN (MongoDB, Express.js, React.js, Node.js)**. This web application allows users to create multiple projects and manage tasks within each project. Users can perform CRUD operations on tasks, update task status, and filter tasks based on status. The system includes secure authentication with JWT.
 
 ---
 
 ## Features
 
 - User Signup & Login with JWT Authentication
-- Create up to 4 projects per user (Create Project Button will be disable after user create 4 projects )
+- Create multiple projects
 - View and delete existing projects
 - Create tasks under each project
 - Edit task title, description, and status
