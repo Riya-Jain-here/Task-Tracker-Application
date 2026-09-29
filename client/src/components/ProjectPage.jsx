@@ -182,7 +182,7 @@ const ProjectPage = () => {
                         onClick={async () => {
                           try {
                             const res = await axios.put(
-                              `http://localhost:5000/api/tasks/${t._id}`,
+                              `${API_URL}/api/tasks/${t._id}`,
                               {
                                 title: editTitle,
                                 description: editDescription,
