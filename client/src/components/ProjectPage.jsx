@@ -16,6 +16,7 @@ const ProjectPage = () => {
   const [editStatus, setEditStatus] = useState("");
   const token = localStorage.getItem("token");
   const headers = { Authorization: `Bearer ${token}` };
+  const API_URL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     fetchTasks();
@@ -24,7 +25,7 @@ const ProjectPage = () => {
 
   const fetchProjectName = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/projects/${id}`, {
+      const res = await axios.get(`${API_URL}/api/projects/${id}`, {
         headers,
       });
       setProjectName(res.data.name);
@@ -35,7 +36,7 @@ const ProjectPage = () => {
 
   const fetchTasks = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/tasks/${id}`, {
+      const res = await axios.get(`${API_URL}/api/tasks/${id}`, {
         headers,
       });
       setTasks(res.data);
@@ -47,7 +48,7 @@ const ProjectPage = () => {
   const createTask = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:5000/api/tasks/${id}`,
+        `${API_URL}/api/tasks/${id}`,
         { title, description, status },
         { headers }
       );
@@ -62,7 +63,7 @@ const ProjectPage = () => {
 
   const deleteTask = async (taskId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/${taskId}`, {
+      await axios.delete(`${API_URL}/api/tasks/${taskId}`, {
         headers,
       });
       setTasks(tasks.filter((t) => t._id !== taskId));
@@ -74,7 +75,7 @@ const ProjectPage = () => {
   const updateTaskStatus = async (taskId, newStatus) => {
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/tasks/${taskId}`,
+        `${API_URL}/api/tasks/${taskId}`,
         { status: newStatus },
         { headers }
       );

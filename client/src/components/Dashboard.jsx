@@ -8,6 +8,7 @@ const Dashboard = () => {
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
   const headers = { Authorization: `Bearer ${token}` };
+  const API_URL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     fetchProjects();
@@ -15,7 +16,7 @@ const Dashboard = () => {
 
   const fetchProjects = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/projects", {
+      const res = await axios.get(`${API_URL}/api/projects`, {
         headers,
       });
       setProjects(res.data);
@@ -33,7 +34,7 @@ const Dashboard = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/projects",
+        `${API_URL}/api/projects`,
         { name },
         { headers }
       );
@@ -50,7 +51,7 @@ const Dashboard = () => {
       return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/projects/${projectId}`, {
+      await axios.delete(`${API_URL}/api/projects/${projectId}`, {
         headers,
       });
       setProjects(projects.filter((p) => p._id !== projectId));

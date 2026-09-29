@@ -4,7 +4,8 @@ client/node_modules/
 server/node_modules/
 
 # Env files
-*.env
+.env
+.env.local
 
 # Build output
 dist/

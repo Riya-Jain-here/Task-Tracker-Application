@@ -9,6 +9,7 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const [country, setCountry] = useState("");
   const navigate = useNavigate();
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const handleSignup = async (e) => {
     e.preventDefault(); // prevent form from reloading the page
@@ -18,7 +19,7 @@ const Signup = () => {
       return;
     }
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/signup", {
+      const res = await axios.post(`${API_URL}/api/auth/signup`, {
         name,
         email,
         password,
